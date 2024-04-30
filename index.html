@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger DElection</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+   
+</head>
+<body class="container">
+    <h1>Tiger DElection</h1>
+    <p>Welcome to Tiger DElection! Click an election to vote. You will only be able to vote once per election. You will know you have voted successfully if you do not get an error alert. You may have to refresh the page a few times to see your vote reflected in the vote count.</p>
+    <div id="elections-list" class="list-group">
+        <!-- Election cards will be dynamically added here -->
+    </div>
+
+    <div id="election-details" style="display: none;">
+
+        <h2 id="election-title"></h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="election-candidates">
+                    <!-- Candidate details will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+        <form id="vote-form">
+            <select id="candidate-options" name="candidate"></select>
+            <button type="submit" class="btn btn-primary">Vote</button>
+        </form>
+        <p id="error-msg"></p>
+        <button id="back-btn" class="btn btn-secondary">Back to Elections</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.3/dist/web3.min.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
