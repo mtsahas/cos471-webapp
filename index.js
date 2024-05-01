@@ -1,9 +1,10 @@
 // import Web3 from 'web3';
 
 const contractAddresses = [
-    '0xFFdB448F9eE99490bEF7Ce249C6cb70Bd989b49c',
+	'0xA03b6d90196E173B5AC1DdE4F8754A1CF31b9656',
+	'0xB6E5b3025C6EcaEc0577C11Bf84f501420E64f1f',
     '0x7D745e912fc09725d93f3F5b9F8F106Bd4a68e93',
-    // '0x6484314E3cEF8aC3603C64806dB6eC24977C29d8'
+	
     // Add more contract addresses here for additional elections
 ];
 
@@ -145,7 +146,7 @@ const abi = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-];
+]
 // Detect MetaMask in WebApp
 if (typeof window.ethereum !== 'undefined') {
     console.log('MetaMask is installed!');
